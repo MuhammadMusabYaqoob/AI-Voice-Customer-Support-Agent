@@ -93,6 +93,30 @@ gTTS converts text → human-like voice through these steps:
 
 ---
 
+## 🔄 STT + AI + TTS Pipeline (Visual Diagram)
+
+```
+      🎤 User Voice
+            │
+            ▼
+   🎙️ Whisper STT (Speech-to-Text)
+            │
+            ▼
+       📝 Text Content
+            │
+            ▼
+      🤖 Gemini AI Response
+            │
+            ▼
+      🔊 gTTS (Text-to-Speech)
+            │
+            ▼
+       🎧 AI Voice Output
+```
+
+
+---
+
 ## 📂 Project Structure
 
 ```
