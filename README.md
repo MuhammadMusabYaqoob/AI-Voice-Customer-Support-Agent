@@ -44,54 +44,52 @@ No installation needed — everything runs in the cloud.
 
 ## 🛠️ How It Works
 
-The system uses a simple but powerful pipeline:
+The system uses a simple pipeline:
 
-**Microphone / Text Input → Whisper (STT) → Gemini Response → gTTS (TTS) → Audio Output + Chat History**
-
----
-
-## 🎙️ STT (Speech-to-Text) – How It Works Behind the Scenes
-
-Whisper converts your voice into text using these steps:
-
-1. **Audio Input** – User speaks into the mic.
-2. **Sampling** – Voice waves converted into thousands of digital numbers per second.
-3. **Waveform** – Audio becomes a list of numbers representing loudness over time.
-4. **Framing** – Audio is cut into tiny chunks for analysis.
-5. **Windowing** – Smooths edges of each chunk.
-6. **Spectrogram** – Creates a picture of the sound (time vs frequency).
-7. **Mel-Spectrogram** – A human-hearing friendly version of the spectrogram.
-8. **Neural Network Processing** – Whisper AI analyzes the sound patterns.
-9. **Token Prediction** – AI predicts text pieces like “Hel”, “lo”.
-10. **Text Output** – Final readable sentence is formed.
-
-**Simple Summary:**  
-Your voice → numbers → sound image → AI → text.
+**Voice → STT (Whisper) → Gemini AI → TTS (gTTS) → Voice Response**
 
 ---
 
-## 🔊 TTS (Text-to-Speech) – How It Works Behind the Scenes
+<details>
+<summary><strong>🎙️ STT (Speech-to-Text) – How It Works</strong></summary>
+<br>
 
-gTTS converts AI text into natural voice using these steps:
+Whisper converts audio → text through these steps:
 
-1. **Text Normalization** – Converts symbols/numbers to spoken-friendly text.
-2. **Tokenization** – Breaks text into small pieces.
-3. **Phoneme Conversion** – Turns words into pronunciation sounds (e.g., “Hello” → HH AH L OW).
-4. **Prosody Modeling** – Decides tone, speed, and emotion.
-5. **Mel-Spectrogram Generation** – AI draws a sound blueprint.
-6. **Vocoder** – Converts spectrogram into actual audio.
-7. **Waveform Synthesis** – Generates the real sound wave.
-8. **Audio Encoding** – Saves it as an MP3/WAV file.
-9. **Playback** – User hears the final generated voice.
+1. 🎤 **Audio Input** – User speaks.
+2. 🔢 **Sampling** – Converts sound waves into digital numbers.
+3. 📈 **Waveform** – List of numbers representing loudness over time.
+4. ✂️ **Framing** – Slices audio into tiny chunks.
+5. 🍃 **Windowing** – Smooths the slices.
+6. 🖼️ **Spectrogram** – Creates a picture of sound (time vs frequency).
+7. 🎚️ **Mel-Spectrogram** – Version optimized for human hearing.
+8. 🧠 **Neural Network Processing** – Whisper understands speech patterns.
+9. 🔡 **Token Prediction** – Predicts text fragments.
+10. 📝 **Final Text Output** – Forms the sentence.
 
-**Simple Summary:**  
-Text → sounds → spectrogram → vocoder → human-like speech.
+<strong>Simple Summary:</strong> voice → numbers → sound image → AI → text
+</details>
 
 ---
 
-Whisper handles **understanding your voice**,  
-Gemini handles **thinking**,  
-gTTS handles **speaking back to you**.
+<details>
+<summary><strong>🔊 TTS (Text-to-Speech) – How It Works</strong></summary>
+<br>
+
+gTTS converts text → human-like voice through these steps:
+
+1. 🧹 **Text Normalization** – Clean & prepare text for speaking.
+2. ✂️ **Tokenization** – Split text into small pieces.
+3. 🔊 **Phoneme Conversion** – Words → pronunciation sounds.
+4. 🎼 **Prosody Modeling** – Emotion, tone, pauses.
+5. 🖼️ **Mel-Spectrogram Generation** – Blueprint of how speech should sound.
+6. 🎛️ **Vocoder** – Converts spectrogram → real audio.
+7. 🌊 **Waveform Synthesis** – Creates final voice waveform.
+8. 💾 **Audio Encoding** – Converts waveform into MP3/WAV.
+9. ▶️ **Playback** – User hears the output.
+
+<strong>Simple Summary:</strong> text → sounds → spectrogram → vocoder → speech
+</details>
 
 ---
 
