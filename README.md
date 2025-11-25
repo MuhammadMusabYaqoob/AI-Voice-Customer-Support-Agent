@@ -73,14 +73,16 @@ AI-Voice-Agent/
 ## ▶️ Demo Preview
 
 <p align="center">
-  <video src="demo.mp4" width="700" controls></video>
+  <a href="https://raw.githubusercontent.com/MuhammadMusabYaqoob/AI-Voice-Customer-Support-Agent/main/demo.mp4">
+    <img src="https://img.shields.io/badge/▶️ Click_to_Watch_Demo-FF0000?style=for-the-badge" width="300"/>
+  </a>
 </p>
 
 <p align="center">
-  https://github.com/MuhammadMusabYaqoob/AI-Voice-Customer-Support-Agent/edit/main/README.md
-  ▶️ <a href="https://github.com/MuhammadMusabYaqoob/AI-Voice-Customer-Support-Agent/blob/main/demo.mp4?raw=true">Click here to view the video</a>
+  <video width="700" controls>
+    <source src="https://raw.githubusercontent.com/MuhammadMusabYaqoob/AI-Voice-Customer-Support-Agent/main/demo.mp4" type="video/mp4">
+  </video>
 </p>
-
 
 Use the following actions in the app:
 
