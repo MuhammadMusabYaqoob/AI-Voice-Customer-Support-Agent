@@ -191,7 +191,6 @@ before chatting.
 
 **Muhammad Musab**  
 🌐 GitHub: https://github.com/muhammadmusabyaqoob  
-📧 musabyaqoob2@gmail.com  
 
 ---
 
